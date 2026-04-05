@@ -181,20 +181,20 @@
     .scene.active{opacity:1;pointer-events:all;}
 
     /* ── AÇILIŞ ── */
-    #scene-intro{text-align:center;}
+    #scene-0{text-align:center;}
     .intro-sigil{font-size:1.1rem;letter-spacing:.4em;color:var(--c-rose);margin-bottom:1.8rem;opacity:0;}
-    #scene-intro.active .intro-sigil{animation:fade-up var(--t-rise) .4s forwards;}
+    #scene-0.active .intro-sigil{animation:fade-up var(--t-rise) .4s forwards;}
     .intro-title{font-family:'Cormorant Garamond',serif;
       font-size:clamp(2.8rem,10vw,5.8rem);font-weight:300;line-height:1.12;
       letter-spacing:.02em;color:var(--c-text);opacity:0;}
-    #scene-intro.active .intro-title{animation:fade-up var(--t-rise) .25s forwards;}
+    #scene-0.active .intro-title{animation:fade-up var(--t-rise) .25s forwards;}
     .intro-title em{font-style:italic;color:var(--c-rose);}
     .intro-sub{margin-top:1.4rem;font-size:clamp(.7rem,2.2vw,.88rem);font-weight:200;
       letter-spacing:.45em;text-transform:uppercase;color:var(--c-text-dim);opacity:0;}
-    #scene-intro.active .intro-sub{animation:fade-in 1s ease 1.4s forwards;}
+    #scene-0.active .intro-sub{animation:fade-in 1s ease 1.4s forwards;}
     .tap-hint{margin-top:2.8rem;font-size:clamp(.6rem,1.9vw,.76rem);font-weight:300;
       letter-spacing:.5em;text-transform:uppercase;color:var(--c-text-faint);opacity:0;}
-    #scene-intro.active .tap-hint{animation:hint-appear 4s ease 2.4s infinite;}
+    #scene-0.active .tap-hint{animation:hint-appear 4s ease 2.4s infinite;}
     @keyframes hint-appear{
       0%{opacity:0;transform:translateY(4px);}18%{opacity:.5;transform:translateY(0);}
       60%{opacity:.5;}80%{opacity:.22;}100%{opacity:.5;}
@@ -420,7 +420,7 @@
 <div id="stage">
 
   <!-- SAHNE 0 — Açılış -->
-  <section class="scene active" id="scene-intro" style="text-align:center">
+  <section class="scene active" id="scene-0" style="text-align:center">
     <div class="intro-sigil">✦ &nbsp; ✦ &nbsp; ✦</div>
     <h1 class="intro-title">Sana özel<br><em>bir şey var</em></h1>
     <p class="intro-sub">küçük bir hediye</p>
@@ -555,7 +555,7 @@ const CONFIG = {
     diğer sahneler etkilenmez.
     ──────────────────────────────────────────────────────────────── */
   photos: [
-    { sceneId:"scene-intro",     src:"assets/images/photo1.jpg", caption:"" },
+    { sceneId:"scene-0",     src:"assets/images/photo1.jpg", caption:"" },
     { sceneId:"scene-1",     src:"assets/images/photo2.jpg", caption:"" },
     { sceneId:"scene-2",     src:"assets/images/photo3.jpg", caption:"" },
     { sceneId:"scene-3",     src:"assets/images/photo4.jpg", caption:"" },
@@ -571,7 +571,7 @@ const CONFIG = {
 
 /* ── SAHNE SIRASI ── */
 const SCENE_IDS = [
-  "scene-intro",
+  "scene-0",
   "scene-1","scene-2","scene-3","scene-4","scene-5",
   "scene-6","scene-7","scene-8","scene-9",
   "scene-final",
